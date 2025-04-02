@@ -1,0 +1,25 @@
+
+
+    import pytest
+    from prost import prost
+
+    def test_zero():
+        assert not prost(0)
+
+    def test_one():
+        assert not prost(1)
+
+    def test_two():
+        assert not prost(3)
+
+    def test_tree():
+        assert not prost(4)
+
+    def test_four():
+        assert not prost(100)
+
+    def test_five():
+        assert not prost(345)
+
+    def test_six():
+        assert not prost(27)
